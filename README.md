@@ -27,3 +27,26 @@ Output: "abcabccdcdcdef"
 * s consists of lowercase English letters, digits, and square brackets '[]'
 * s is guaranteed to be a valid input
 * All the integers in s are in the range [1, 300]
+
+# How to run the Program
+
+Download the code and open the project folder and type the following instructions below
+
+'''shell
+python3 -m virtualenv env
+virtualenv env
+source env/bin/activate
+'''
+
+## To run the unit tests
+
+'''shell
+pip3 install unittest2
+python3 solution_test.py
+'''
+
+## To run the solution
+
+'''shell
+python3 solution.py
+'''
