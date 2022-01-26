@@ -32,21 +32,30 @@ Output: "abcabccdcdcdef"
 
 Download the code and open the project folder and type the following instructions below
 
-'''shell
+```shell
 python3 -m virtualenv env
+```
+
+```shell
 virtualenv env
+```
+
+```shell
 source env/bin/activate
-'''
+```
 
 ## To run the unit tests
 
-'''shell
+```shell
 pip3 install unittest2
+```
+
+```shell
 python3 solution_test.py
-'''
+```
 
 ## To run the solution
 
-'''shell
+```shell
 python3 solution.py
-'''
+```
