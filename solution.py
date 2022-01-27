@@ -91,15 +91,16 @@ class StringDecoder:
                     stack.append((result, number))
                     
                     result, number = '', 0 # resetting the result and number
+                                    
                     
                 else:
                     last_str, this_num = stack.pop()
-                    result = last_str + this_num * result
+                    result = last_str + this_num * result # open the bracket and repeat the character by the number
             print(result)
             return result
         
 decoder = StringDecoder()
-decoder.string_decode('10[a]5[cv]')
+decoder.string_decode('10[a]5[cv]') # example
 
     
     
