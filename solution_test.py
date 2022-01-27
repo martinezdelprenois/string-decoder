@@ -3,6 +3,12 @@ import re
 import solution
 class TestDecoder(unittest.TestCase):
     
+    def test_string_decode(self):
+        result = solution.decoder.string_decode('43[a]5[cv]')
+        pattern = '[a-z]+$'
+        pattern_check = re.match(pattern, result)
+        self.assertTrue(pattern_check, True)
+    
     def test_regex_matcher(self):
         result = solution.decoder.regex_matcher('43[a]5[cv]')
         self.assertTrue(result, True)
